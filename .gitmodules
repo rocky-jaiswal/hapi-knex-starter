@@ -1,3 +1,0 @@
-[submodule "db"]
-	path = db
-	url = git@github.com:TEDDBerlin/db.git
