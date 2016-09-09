@@ -20,10 +20,7 @@ describe('auth succeeds', () => {
     payload: { email: 'foo@example.com', password: '123456' }
   };
 
-  mock.expects('validateLogin').twice().returns(new Promise((resolve, reject) => {
-
-    resolve({ success: true });
-  }));
+  mock.expects('validateLogin').twice().returns(Promise.resolve({ success: true }));
 
   it('in case of good login credentials', (done) => {
 
@@ -52,10 +49,7 @@ describe('auth fails', () => {
     payload: { username: 'foo@example.com', password: '123456' }
   };
 
-  mock.expects('validateLogin').twice().returns(new Promise((resolve, reject) => {
-
-    reject({ message: 'failed' });
-  }));
+  mock.expects('validateLogin').twice().returns(Promise.reject());
 
   it('in case of bad login credentials', (done) => {
 
