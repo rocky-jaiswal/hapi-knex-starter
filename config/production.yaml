@@ -1,0 +1,12 @@
+db:
+  host:
+  name: todo_app
+  user:
+  password:
+api:
+  port: 3000
+  cors: false
+token:
+  secret: ffgsdfger5345rert34r5werfgergypg45kltg34343444334
+auth:
+  secret: 3434r34rt34opdfjfgopj34i34t3k4mnrt34po34igeg5et5t

@@ -1,0 +1,11 @@
+db:
+  host: localhost
+  name: todo_app_dev
+  user: postgresdev
+  password: postgresdev
+api:
+  host: localhost
+  port: 7000
+  cors: true
+token:
+  secret: 2123f342m34m4l30434kmr34r8dgfgdtj54n4334gtr
