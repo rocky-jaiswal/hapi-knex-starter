@@ -32,11 +32,11 @@ server.register([HapiAuthJWT, { register: require('good'), options: goodOptions 
                                      });
 
   server.auth.default('jwt');
+
+  // Add the routes
+  server.route(Routes.config);
 });
 /* $lab:coverage:on$ */
-
-// Add the routes
-server.route(Routes.config);
 
 // Start the server
 server.start(() => {
